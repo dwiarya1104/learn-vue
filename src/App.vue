@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import Card from './components/Card.vue';
+import UiHeader from './components/UiHeader.vue';
 
 const users = ref([
   {
@@ -41,7 +42,7 @@ const addUser = () => {
 </script>
 
 <template>
-
+  <UiHeader></UiHeader>
   <form class="form" @submit.prevent="addUser">
 
     <label for="">Nama</label>
